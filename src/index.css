@@ -15,3 +15,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@layer components {
+  .primary-btn {
+    @apply bg-green-600 px-7 py-3 rounded-full font-semibold uppercase text-white;
+  }
+}

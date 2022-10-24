@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import { Login } from "./components";
 
 export default function App() {
   return (
-    <div className="mt-3">App</div>
-  )
+    <div className="app">
+      <Login />
+    </div>
+  );
 }
