@@ -2,7 +2,17 @@ import React from "react";
 
 export default function Login() {
   function handleConnectClick(): React.MouseEventHandler<HTMLButtonElement> | undefined {
-    console.log('connect');
+    const scope = [
+      "user-read-email",
+      "user-read-private",
+      "user-read-playback-state",
+      "user-modify-playback-state",
+      "user-read-currently-playing",
+      "user-read-playback-position",
+      "user-top-read",
+      "user-read-recently-played",
+    ];
+    window.location.href = `${process.env.REACT_APP_SPOTIFY_API_URL}?client_id=${process.env.REACT_APP_SPOTIFY_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_SPOTIFY_REDIRECT_URL}&scope=${scope.join(" ")}&response_type=token&show_dialog=true`;
     return;
   }
 
@@ -19,7 +29,10 @@ export default function Login() {
             <h1 className="text-lg font-bold block mb-10 sm:text-2xl">
               Welcome to the Spotify Clone!
             </h1>
-            <button className="primary-btn" onClick={() => handleConnectClick()}>
+            <button
+              className="primary-btn"
+              onClick={() => handleConnectClick()}
+            >
               Connect
             </button>
           </div>
@@ -28,5 +41,3 @@ export default function Login() {
     </div>
   );
 }
-
-
