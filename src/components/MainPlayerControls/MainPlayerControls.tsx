@@ -32,7 +32,7 @@ export default function MainPlayerControls() {
   };
 
   const changeTrack = async (type: string) => {
-    console.log("type");
+    console.log(type);
   };
 
   return (
