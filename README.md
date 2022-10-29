@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# Introduction
+
+This is a Spotify clone where user can connect in with thier Client ID and can listen to thier added tracks/playlists. 
+ToDo: Player functionality.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Screenshots
+
+[![spotify1.png](https://i.postimg.cc/jd2dmvnq/spotify1.png)](https://postimg.cc/4mCgh61j)
+
+[![spotify2.png](https://i.postimg.cc/9M1CNqWq/spotify2.png)](https://postimg.cc/7GCF5hJx)
 
 ## Available Scripts
 
