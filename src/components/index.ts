@@ -1,6 +1,10 @@
 export { default as Login } from "./Login/Login";
-export { default as Spotify } from "./Spotify/Spotify";
+export { default as Home } from "./Home/Home";
 export { default as Sidebar } from "./Sidebar/Sidebar";
-export { default as Footer } from "./Footer/Footer";
+export { default as Footer } from "./Player/Player";
 export { default as Header } from "./Header/Header";
 export { default as Playlists } from "./Playlists/Playlists";
+export { default as Tracks } from "./Tracks/Tracks";
+export { default as CurrentTrack } from "./CurrentTrack/CurrentTrack";
+export { default as MainPlayerControls } from "./MainPlayerControls/MainPlayerControls";
+export { default as PlayerVolume } from "./PlayerVolume/PlayerVolume";

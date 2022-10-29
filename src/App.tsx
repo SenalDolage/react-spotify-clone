@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Login, Spotify } from "./components";
+import { Login, Home } from "./components";
 import { ReducerCases } from "./enums/reducer-cases";
 import { useStateProvider } from "./utils/StateProvider";
 
@@ -16,5 +16,5 @@ export default function App() {
     }
   }, [dispatch, token]);
 
-  return <div className="app">{token ? <Spotify /> : <Login />}</div>;
+  return <div className="app">{token ? <Home /> : <Login />}</div>;
 }
