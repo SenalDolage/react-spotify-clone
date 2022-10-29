@@ -11,8 +11,10 @@ export default function Login() {
       "user-read-playback-position",
       "user-top-read",
       "user-read-recently-played",
+      "playlist-read-private",
+      "playlist-read-collaborative",
     ];
-    window.location.href = `${process.env.REACT_APP_SPOTIFY_API_URL}?client_id=${process.env.REACT_APP_SPOTIFY_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_SPOTIFY_REDIRECT_URL}&scope=${scope.join(" ")}&response_type=token&show_dialog=true`;
+    window.location.href = `${process.env.REACT_APP_SPOTIFY_ACCOUNTS_URL}?client_id=${process.env.REACT_APP_SPOTIFY_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_SPOTIFY_REDIRECT_URL}&scope=${scope.join(" ")}&response_type=token&show_dialog=true`;
     return;
   }
 

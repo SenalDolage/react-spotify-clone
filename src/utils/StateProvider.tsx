@@ -1,10 +1,5 @@
 import { createContext, useContext, useReducer } from "react";
-
-type StateProviderPropTypes = {
-    initialState: any;
-    reducer: any;
-    children: JSX.Element;
-}
+import { StateProviderPropTypes } from "../types/state-provider";
 
 export const StateContext = createContext<any>('');
 
