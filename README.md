@@ -1,6 +1,6 @@
 # Introduction
 
-This is a Spotify clone where user can connect in with thier Client ID and can listen to thier added tracks/playlists. 
+This is a Spotify clone where user can connect in with their Client ID and can listen to their added tracks/playlists. 
 ToDo: Player functionality.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
